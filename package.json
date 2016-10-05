@@ -1,0 +1,23 @@
+{
+  "name": "starter-template",
+  "version": "1.0.0",
+  "description": "",
+  "main": "client/index.js",
+  "scripts": {
+    "serve": "nodemon server/google-bearer"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "express": "^4.14.0",
+    "express-session": "^1.14.1",
+    "passport": "^0.3.2",
+    "passport-google-oauth20": "^1.0.0",
+    "passport-http": "^0.3.0",
+    "passport-http-bearer": "^1.0.1"
+  },
+  "devDependencies": {
+    "nodemon": "^1.10.2"
+  }
+}
