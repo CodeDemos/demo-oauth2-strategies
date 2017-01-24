@@ -1,17 +1,15 @@
-var express = require('express');
-var passport = require('passport');
-var BasicStrategy = require('passport-http').BasicStrategy;
-var GoogleStrategy = require('passport-google-oauth20').Strategy;
-var app = express();
+const express = require('express');
+
+const app = express();
 
 app.use('/', express.static('build'));
 
-app.get('/', function (req, res) {
+app.get('/', (req, res) => {
   res.json({
-    message: 'Hello from express!'
-  })
+    message: 'Hello from express!',
+  });
 });
 
-app.listen(3000, function () {
+app.listen(3000, () => {
   console.log('Listening at 3000!');
 });
